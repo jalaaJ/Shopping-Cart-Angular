@@ -1,0 +1,140 @@
+{
+  "config": {
+    "configFile": "C:\\Users\\abusa\\Desktop\\interviewTest\\playwright.config.ts",
+    "rootDir": "C:/Users/abusa/Desktop/interviewTest/tests",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 2
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "html",
+        {
+          "open": "never"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "jsonReports/jsonReport.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 15000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "C:/Users/abusa/Desktop/interviewTest/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "id": "",
+        "name": "",
+        "testDir": "C:/Users/abusa/Desktop/interviewTest/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "tests/logout.test.ts"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "version": "1.40.1",
+    "workers": 8,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "logout.test.ts",
+      "file": "logout.test.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Expecting to see the Logout button",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 4613,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2023-12-20T08:27:33.065Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "66b241b4174358593330-8a5b429841dc68bb3e8d",
+          "file": "logout.test.ts",
+          "line": 3,
+          "column": 5
+        },
+        {
+          "title": "Expecting to be redirected to login when clicking the Logout",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "status": "passed",
+                  "duration": 4870,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2023-12-20T08:27:33.059Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "66b241b4174358593330-fb7310123b4d2456e167",
+          "file": "logout.test.ts",
+          "line": 20,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2023-12-20T08:27:32.538Z",
+    "duration": 6021.761,
+    "expected": 2,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

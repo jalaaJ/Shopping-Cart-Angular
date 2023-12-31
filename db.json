@@ -1,0 +1,59 @@
+{
+  "users": [
+    {
+      "email": "abusalehjalaa@gmail.com",
+      "password": "A12345",
+      "id": 1
+    },
+    {
+      "email": "abusalehjalaa1@gmail.com",
+      "password": "J12345",
+      "id": 2
+    },
+    {
+      "email": "jomana@gmail.com",
+      "password": "J12345",
+      "id": 3
+    },
+    {
+      "email": "bayan@gmail.com",
+      "password": "B12345",
+      "id": 4
+    },
+    {
+      "email": "ayman@gmail.com",
+      "password": "Ayman1",
+      "id": 5
+    },
+    {
+      "email": "hello@gmail.com",
+      "password": "H12345",
+      "id": 6
+    },
+    {
+      "email": "hi@gmail.com",
+      "password": "H12345",
+      "id": 7
+    },
+    {
+      "email": "hi@gmail.com",
+      "password": "H12345",
+      "id": 8
+    },
+    {
+      "email": "jomana123@gmail.com",
+      "password": "Queen1",
+      "id": 9
+    },
+    {
+      "email": "hi@gmail.com",
+      "password": "H12345",
+      "id": 10
+    },
+    {
+      "email": "abusalehjalaa2@gmail.com",
+      "password": "A12345",
+      "id": 11
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+<ng-container *ngIf="products.length">
+  <div class="container">
+    <div class="card-table">
+      <div class="cart-product">
+        <p-table [value]="products">
+          <!-- PrimeNG table headers -->
+          <ng-template pTemplate="header">
+            <tr>
+              <th>No.</th>
+              <th>Product Name</th>
+              <th>Product Image</th>
+              <th>Description</th>
+              <th>Price</th>
+              <th>Action</th>
+            </tr>
+          </ng-template>
+
+          <!-- PrimeNG table body -->
+          <ng-template pTemplate="body" let-product let-i="rowIndex">
+            <tr>
+              <td>{{ i + 1 }}</td>
+              <td>{{ product.title }}</td>
+              <td>
+                <img style="width: 120px" src="{{ product.image }}" alt="" />
+              </td>
+              <td style="width: 25%">{{ product.description }}</td>
+              <td style="width: 12%">${{ product.price }}</td>
+              <td>
+                <!-- <p-button (click)="removeItem(product)" icon="pi pi-trash" class="p-button-danger"></p-button> -->
+                <p-button
+                  [text]="true"
+                  [raised]="true"
+                  icon="pi pi-trash"
+                  severity="danger"
+                  (click)="removeItem(product)"
+                ></p-button>
+              </td>
+            </tr>
+          </ng-template>
+
+          <!-- PrimeNG table footer -->
+          <ng-template pTemplate="footer">
+            <tr>
+              <td colspan="4"></td>
+              <td>
+                <p-button
+                  label="Empty"
+                  [text]="true"
+                  [raised]="true"
+                  severity="danger"
+                  (click)="emptyCart()"
+                ></p-button>
+              </td>
+              <td>
+                <p-button
+                  routerLink="/products"
+                  label="Continue"
+                  [text]="true"
+                  [raised]="true"
+                ></p-button>
+              </td>
+              <td>
+                <p-button
+                  label="Checkout!"
+                  [text]="true"
+                  [raised]="true"
+                  severity="success"
+                  (click)="onCheckout()"
+                ></p-button>
+              </td>
+              <td>
+                <strong>Total: ${{ totalCost | number : "1.2-2" }}</strong>
+              </td>
+            </tr>
+          </ng-template>
+        </p-table>
+      </div>
+    </div>
+  </div>
+</ng-container>
+
+<ng-container *ngIf="!products.length">
+  <div class="container">
+    <div class="center">
+      <h4><strong>Your cart is empty!</strong></h4>
+      <!-- <button routerLink="/products" class="btn btn-primary"> -->
+        <p-button routerLink="/products" label="Shop now!" [outlined]="true"></p-button>
+    </div>
+  </div>
+</ng-container>

@@ -1,0 +1,46 @@
+* My info: Jalaa Abu Saleh, jalaaabusaleh.95@gmail.com, 0543300104
+
+* Guide:
+
+	1. Make sure you have npm, node_modules, Angular cli and Node.js installed.
+	2. Install the json server if not installed: npm install -g json-server (or any other way of installation).
+	3. Open the project.
+	4. In the terminal, start the app by typing: ng serve (or npx ng serve).
+	5. In another terminal, start the json server by typing: npx json-server --watch db.json.
+
+* App description:
+
+	- The app contains 4 main parts: Login page, Register page, Products page and Cart page.
+
+	- Navigate to the app's url, there you'll be directed to the login form. Since you dont have an account,
+          click on the register, create an account and you'll be redirected back to the login.
+
+        - Type your email and password and log in, you'll be directed to the products page.
+
+        - Choose your products and add them to cart.
+
+        - When you wish to view your cart, click on the cart link in the header, there you can see your products,
+          and you can delete a certain product, empty the cart, continue shopping or checkout!
+
+        - Now, you can find the logout link in the header, click it to logout and you'll be directed to the login form.
+
+* Technologies and concepts:
+
+ 	- I've used Angular as the framework.
+  
+	- Bootstrap and Primeng for the design.
+
+	- Json server as a server-side to mock a server to handle the users.
+
+     	- I've used a 'fakestore' API to handle the products.
+
+	- AuthGuard was implemented on both products and cart routes.
+
+	- Lazy loading was implemented on the products and the cart modules.
+
+	- Reuse Strategy was used to handle the state of the cart when switching between tabs, logging out then logging in again.
+
+	- I've used Playwright for e2e testing for the login, logout, register, add product, view cart, remove product from cart.
+
+
+   

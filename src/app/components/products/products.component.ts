@@ -25,7 +25,6 @@ export class ProductsComponent implements OnInit{
                 {   
                     Object.assign(product, {total: product.price});   
                 });
-
             });
     }
 

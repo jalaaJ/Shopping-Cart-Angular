@@ -54,13 +54,4 @@ export class AuthService {
     return this.http.get<User[]>(`${this.baseUrl}/users?email=${email}`);
   }
 
-  getLoggedInUserUniqueValue(): string | null {
-    const user = this.getCurrentUser();
-    return user ? `user_${user.id}` : null;
-  }
-
-  private getCurrentUser(): User | null {
-    const userJson = sessionStorage.getItem('current_user');
-    return userJson ? JSON.parse(userJson) : null;
-  }
 }
